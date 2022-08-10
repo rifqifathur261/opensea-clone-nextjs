@@ -20,9 +20,7 @@ const style = {
 }
 
 
-const Header = () =>
-// { return (<div>tess</div>) }
-{
+const Header = () => {
     return (
         <div className={style.wrapper}>
             <Link href="/">
@@ -38,7 +36,9 @@ const Header = () =>
                 <input className={style.searchInput} placeholder='Seach items, collections, and accounts'></input>
             </div>
             <div className={style.headerItems}>
-                <div className={style.headerItem}> Collections </div>
+                <Link href="/collections/0xCA6F9873D7D25afA4C9E6D3f032cAed0a9fF34Ba">
+                    <div className={style.headerItem}> Collections </div>
+                </Link>
                 <div className={style.headerItem}> Stats </div>
                 <div className={style.headerItem}> Resources </div>
                 <div className={style.headerItem}> Create </div>
